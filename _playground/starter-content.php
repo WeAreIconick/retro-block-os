@@ -4,10 +4,10 @@
  *
  * @link https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/
  *
- * @package RetroBlock Os
+ * @package RetroBlockOs
  */
 
-namespace RetroBlock Os\StarterContent;
+namespace RetroBlockOs\StarterContent;
 
 /**
  * Returns the array of starter content for the theme.

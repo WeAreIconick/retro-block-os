@@ -4,17 +4,17 @@
  *
  * @link    https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RetroBlock Os
+ * @package RetroBlockOs
  */
 
-namespace RetroBlock Os\Functions;
+namespace RetroBlockOs\Functions;
 
 /**
  * Set up any theme supports we may need, and starter content.
  */
 function on_after_setup_theme() {
 	require get_template_directory() . '/_playground/starter-content.php';
-	\add_theme_support( 'starter-content', \RetroBlock Os\StarterContent\get_starter_content() );
+	\add_theme_support( 'starter-content', \RetroBlockOs\StarterContent\get_starter_content() );
 }
 \add_action( 'after_setup_theme', __NAMESPACE__ . '\on_after_setup_theme' );
 
