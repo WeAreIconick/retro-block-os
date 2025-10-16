@@ -1,7 +1,7 @@
-# EXAMPLE_REPO_NAME
+# retro-block-os
 
-EXAMPLE_REPO_DESCRIPTION
+A retro computing theme.
 
 # Testing
 
-[Test it out on Playground](EXAMPLE_REPO_PLAYGROUND_URL)
+[Test it out on Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/WeAreIconick/retro-block-os/refs/heads/main/_playground/blueprint.json)

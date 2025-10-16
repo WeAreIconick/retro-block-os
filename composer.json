@@ -1,8 +1,8 @@
 {
-	"name": "georgestephanis/theme-repo-template",
+	"name": "WeAreIconick/retro-block-os",
 	"type": "wordpress-theme",
-	"description": "A starter theme for FSE.  Will generally be overwritten.",
-	"homepage": "https://github.com/georgestephanis/theme-repo-template",
+	"description": "A retro computing theme.",
+	"homepage": "https://github.com/WeAreIconick/retro-block-os",
 	"license": "GPL-2.0-or-later",
 	"repositories": [
 		{

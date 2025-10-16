@@ -2,10 +2,10 @@
 /**
  * Some setup scripts to run when initializing a Playground environment.
  *
- * @package ThemeRepoTemplate
+ * @package RetroBlock Os
  */
 
-namespace ThemeRepoTemplate\Setup;
+namespace RetroBlock Os\Setup;
 
 /**
  * Set and flush rewrite rules.
@@ -21,7 +21,7 @@ $wp_rewrite->flush_rules();
 
 require_once __DIR__ . '/starter-content.php';
 
-$starter_content = \ThemeRepoTemplate\StarterContent\get_starter_content();
+$starter_content = \RetroBlock Os\StarterContent\get_starter_content();
 $nav_menus       = array();
 
 /**
