@@ -16,7 +16,7 @@
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array">
-				<element value="RetroBlock Os"/>
+				<element value="RetroBlockOs"/>
 				<element value="retro_block_os"/>
 			</property>
 		</properties>

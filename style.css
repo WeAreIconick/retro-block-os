@@ -10,30 +10,60 @@ Text Domain:  retro-block-os
 Domain Path:  /languages
 Requires PHP: 8.2
 */
-/*
- * Button Styles: (This example pattern will also make a
- * graceful gradient background change)
- */
-@property --focus-button-start {
-  syntax: "<color>";
-  initial-value: #263450;
-  inherits: false;
+.is-root-container,
+.wp-site-blocks {
+  box-sizing: border-box;
+  background: var(--wp--preset--gradient--halftone);
+  max-width: var(--wp--style--global--wide-size);
+  margin: 1em auto;
+  padding-left: 2em;
+  padding-right: 2em;
 }
-@property --focus-button-end {
-  syntax: "<color>";
-  initial-value: #466096;
-  inherits: false;
+
+.is-root-container,
+.wp-site-blocks,
+.pixel-corners,
+.pixel-corners--wrapper {
+  clip-path: polygon(0px calc(100% - 20px), 4px calc(100% - 20px), 4px calc(100% - 12px), 8px calc(100% - 12px), 8px calc(100% - 8px), 12px calc(100% - 8px), 12px calc(100% - 4px), 20px calc(100% - 4px), 20px 100%, calc(100% - 20px) 100%, calc(100% - 20px) calc(100% - 4px), calc(100% - 12px) calc(100% - 4px), calc(100% - 12px) calc(100% - 8px), calc(100% - 8px) calc(100% - 8px), calc(100% - 8px) calc(100% - 12px), calc(100% - 4px) calc(100% - 12px), calc(100% - 4px) calc(100% - 20px), 100% calc(100% - 20px), 100% 20px, calc(100% - 4px) 20px, calc(100% - 4px) 12px, calc(100% - 8px) 12px, calc(100% - 8px) 8px, calc(100% - 12px) 8px, calc(100% - 12px) 4px, calc(100% - 20px) 4px, calc(100% - 20px) 0px, 20px 0px, 20px 4px, 12px 4px, 12px 8px, 8px 8px, 8px 12px, 4px 12px, 4px 20px, 0px 20px);
+  position: relative;
 }
-.wp-block-button.is-style-focus-button .wp-block-button__link {
-  background: linear-gradient(135deg, var(--focus-button-start) 0%, var(--focus-button-end) 100%) !important;
-  transition: --focus-button-start 0.5s, --focus-button-end 0.5s;
-  color: #fff;
-  border-radius: 0;
-  font-weight: 700;
+
+.is-root-container,
+.wp-site-blocks,
+.pixel-corners {
+  border: 4px solid transparent;
 }
-.wp-block-button.is-style-focus-button .wp-block-button__link:hover, .wp-block-button.is-style-focus-button .wp-block-button__link:focus {
-  --focus-button-start: #466096;
-  --focus-button-end: #6a7fab;
+
+.pixel-corners--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+
+.pixel-corners--wrapper .pixel-corners {
+  display: block;
+  clip-path: polygon(4px 20px, 8px 20px, 8px 12px, 12px 12px, 12px 8px, 20px 8px, 20px 4px, calc(100% - 20px) 4px, calc(100% - 20px) 8px, calc(100% - 12px) 8px, calc(100% - 12px) 12px, calc(100% - 8px) 12px, calc(100% - 8px) 20px, calc(100% - 4px) 20px, calc(100% - 4px) calc(100% - 20px), calc(100% - 8px) calc(100% - 20px), calc(100% - 8px) calc(100% - 12px), calc(100% - 12px) calc(100% - 12px), calc(100% - 12px) calc(100% - 8px), calc(100% - 20px) calc(100% - 8px), calc(100% - 20px) calc(100% - 4px), 20px calc(100% - 4px), 20px calc(100% - 8px), 12px calc(100% - 8px), 12px calc(100% - 12px), 8px calc(100% - 12px), 8px calc(100% - 20px), 4px calc(100% - 20px));
+}
+
+.is-root-container::after,
+.wp-site-blocks::after,
+.pixel-corners::after,
+.pixel-corners--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 20px), 4px calc(100% - 20px), 4px calc(100% - 12px), 8px calc(100% - 12px), 8px calc(100% - 8px), 12px calc(100% - 8px), 12px calc(100% - 4px), 20px calc(100% - 4px), 20px 100%, calc(100% - 20px) 100%, calc(100% - 20px) calc(100% - 4px), calc(100% - 12px) calc(100% - 4px), calc(100% - 12px) calc(100% - 8px), calc(100% - 8px) calc(100% - 8px), calc(100% - 8px) calc(100% - 12px), calc(100% - 4px) calc(100% - 12px), calc(100% - 4px) calc(100% - 20px), 100% calc(100% - 20px), 100% 20px, calc(100% - 4px) 20px, calc(100% - 4px) 12px, calc(100% - 8px) 12px, calc(100% - 8px) 8px, calc(100% - 12px) 8px, calc(100% - 12px) 4px, calc(100% - 20px) 4px, calc(100% - 20px) 0px, 20px 0px, 20px 4px, 12px 4px, 12px 8px, 8px 8px, 8px 12px, 4px 12px, 4px 20px, 0px 20px, 0px 50%, 4px 50%, 4px 20px, 8px 20px, 8px 12px, 12px 12px, 12px 8px, 20px 8px, 20px 4px, calc(100% - 20px) 4px, calc(100% - 20px) 8px, calc(100% - 12px) 8px, calc(100% - 12px) 12px, calc(100% - 8px) 12px, calc(100% - 8px) 20px, calc(100% - 4px) 20px, calc(100% - 4px) calc(100% - 20px), calc(100% - 8px) calc(100% - 20px), calc(100% - 8px) calc(100% - 12px), calc(100% - 12px) calc(100% - 12px), calc(100% - 12px) calc(100% - 8px), calc(100% - 20px) calc(100% - 8px), calc(100% - 20px) calc(100% - 4px), 20px calc(100% - 4px), 20px calc(100% - 8px), 12px calc(100% - 8px), 12px calc(100% - 12px), 8px calc(100% - 12px), 8px calc(100% - 20px), 4px calc(100% - 20px), 4px 50%, 0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--wp--preset--color--black);
+  display: block;
+  pointer-events: none;
+}
+
+.is-root-container::after,
+.wp-site-blocks::after,
+.pixel-corners::after {
+  margin: -4px;
 }
 
 /*# sourceMappingURL=style.css.map */

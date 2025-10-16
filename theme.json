@@ -7,7 +7,7 @@
 			"defaultPalette": false,
 			"gradients": [
 				{
-					"gradient": "repeating-conic-gradient( var(--wp--preset--color--black) 0 25%, var(--wp--preset--color--white) 0 50%) 50% / 5px 5px",
+					"gradient": "repeating-conic-gradient( var(--wp--preset--color--black) 0 25%, var(--wp--preset--color--white) 0 50%) 50% / 4px 4px",
 					"name": "Halftone",
 					"slug": "halftone"
 				}
@@ -152,6 +152,9 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"color": {
+			"background": "#265252"
+		},
 		"elements": {
 			"button": {
 				"typography": {
